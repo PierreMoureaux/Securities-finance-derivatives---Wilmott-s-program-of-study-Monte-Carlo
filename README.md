@@ -6,14 +6,14 @@ In his famous book http://iman.sn/bibliotek/livres/filieres/banque-finance-assur
 II – Programs of study
 Programs of study are following ones:
 
-- Vanilla TRS  on a single equity
-- longstaff-schwartz algorithm for cancellable TRS
-- Path-dependent embedded option on a single equity : performance/financing barrier, average performance price/strike, lookback
-- TRS on many stocks (Basket return swap) : Price a multi-asset contract by simulating correlated random walks
-- Interest rate derivatives, spot rate model
-- TRS with floating financing rate, HJM model
-- TRS with floating financing rate, LMM model
-- Bonus : TRS with floating financing rate, Generalized RFR MM model
+- I-Vanilla TRS  on a single equity
+- II-longstaff-schwartz algorithm for cancellable TRS
+- III-Path-dependent embedded option on a single equity : performance/financing barrier, average performance price/strike, lookback
+- IV-TRS on many stocks (Basket return swap) : Price a multi-asset contract by simulating correlated random walks
+- V-Interest rate derivatives, spot rate model
+- VI-TRS with floating financing rate, HJM model
+- VII-TRS with floating financing rate, LMM model
+- VIII-Bonus : TRS with floating financing rate, Generalized RFR MM model
 
 III – Disclaimers
 -	For each stream, a summary documentation will be attached (merely mathematical oriented)
