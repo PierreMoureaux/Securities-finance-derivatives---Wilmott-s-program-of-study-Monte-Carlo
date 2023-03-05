@@ -7,8 +7,8 @@ II – Programs of study
 Programs of study are following ones:
 
 - I-Vanilla TRS  on a single equity
-- II-longstaff-schwartz algorithm for cancellable TRS
-- III-Path-dependent embedded option on a single equity : performance/financing barrier, average performance price/strike, lookback
+- II-Path-dependent embedded option on a single equity : performance/financing barrier
+- III-Path-dependent embedded option on a single equity : average performance price/strike, lookback
 - IV-TRS on many stocks (Basket return swap) : Price a multi-asset contract by simulating correlated random walks
 - V-Interest rate derivatives, spot rate model
 - VI-TRS with floating financing rate, HJM model
