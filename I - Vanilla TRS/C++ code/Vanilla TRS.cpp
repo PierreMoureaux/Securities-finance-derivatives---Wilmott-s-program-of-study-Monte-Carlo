@@ -29,7 +29,7 @@ auto rhoSsigma = 0.1;
 auto rhoSr = 0.1;
 auto deltaT = 0.01;
 auto lT = int(T / deltaT);
-auto nbSimul = 10000;
+auto nbSimul = 100;
 
 typePaths pathsGeneration(int nbSimul, int lT, double S0, double sigma0, double r0, double kappa, double theta, double lamb, double nu, double etha, double alpha, double rhoSsigma, double rhoSr)
 {
@@ -67,7 +67,7 @@ typePaths pathsGeneration(int nbSimul, int lT, double S0, double sigma0, double 
     return paths;
 }
 
-std::vector<double> alphaBetaTRS(int TRSpaydate, int prevTRSpaydate, typePaths paths, int nbSimul)
+std::vector<double> alphaBetaTRS(int TRSpaydate, int prevTRSpaydate, const typePaths& paths, int nbSimul)
 {
     auto alphak = 0.0;
     auto betak = 0.0;
@@ -86,7 +86,7 @@ std::vector<double> alphaBetaTRS(int TRSpaydate, int prevTRSpaydate, typePaths p
     return res;
 }
 
-int getIndex(std::vector<double> v, int K)
+int getIndex(const std::vector<double>& v, int K)
 {
     auto it = find(v.begin(), v.end(), K);
     if (it != v.end())
@@ -100,7 +100,7 @@ int getIndex(std::vector<double> v, int K)
     }
 }
 
-std::vector<double> TRS(std::vector<double> TRSpaymentSchedule, double sTRS, typePaths paths, int nbSimul)
+std::vector<double> TRS(const std::vector<double>& TRSpaymentSchedule, double sTRS, const typePaths& paths, int nbSimul)
 {
     auto alpha = 0.0;
     auto beta = 0.0;
