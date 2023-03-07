@@ -61,7 +61,7 @@ typePaths pathsGeneration(int nbSimul, int lT, double S0, double sigma0, double 
             S[k + 1] = S[k] * (r[k] * deltaT + sqrt(sigma[k] * deltaT) * phiS[k]) + S[k];
             intr[k + 1] = intr[k] + r[k + 1];
         }
-        std::unordered_map<std::string, std::vector<double>> interRes = { {"Asset",S},{"Volatility",sigma},{"Interest rate",r},{"Cum. interest rate",intr} };
+        typePaths interRes = { {"Asset",S},{"Volatility",sigma},{"Interest rate",r},{"Cum. interest rate",intr} };
         paths.emplace_back(interRes);
     }
     return paths;
