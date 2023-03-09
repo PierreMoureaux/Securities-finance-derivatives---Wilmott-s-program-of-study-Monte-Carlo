@@ -1,9 +1,9 @@
-#include <iostream>
 #include <vector>
 #include <unordered_map>
 #include <random>
 #include <math.h>
 #include <any>
+#include <iostream>
 
 typedef std::vector<std::unordered_map<std::string, std::vector<double>>> typePaths;
 
@@ -27,7 +27,7 @@ auto alpha = 0.02;
 auto rhoSsigma = 0.1;
 auto rhoSr = 0.1;
 auto deltaT = 0.01;
-auto lT = int(T / deltaT);
+auto lT = static_cast<int>(T / deltaT);
 auto nbSimul = 100;
 
 typePaths pathsGeneration(int nbSimul, int lT, double S0, double sigma0, double r0, double kappa, double theta, double lamb, double nu, double etha, double alpha, double rhoSsigma, double rhoSr)
