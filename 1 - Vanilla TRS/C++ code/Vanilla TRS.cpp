@@ -4,6 +4,7 @@
 #include <math.h>
 #include <any>
 #include <iostream>
+#include <algorithm>
 
 typedef std::vector<std::unordered_map<std::string, std::vector<double>>> typePaths;
 
