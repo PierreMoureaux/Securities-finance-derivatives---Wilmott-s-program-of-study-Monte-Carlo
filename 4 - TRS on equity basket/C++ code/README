@@ -1,0 +1,9 @@
+README
+
+This code needs import of two specific libraries:
+
+#include <Eigen/Cholesky>
+#include <EigenRand/EigenRand>
+
+The former can be found in https://eigen.tuxfamily.org/index.php?title=Main_Page , the latter in https://github.com/bab2min/EigenRand
+
