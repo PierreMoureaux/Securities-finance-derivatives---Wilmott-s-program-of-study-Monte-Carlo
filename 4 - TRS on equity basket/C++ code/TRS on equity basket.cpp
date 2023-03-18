@@ -11,7 +11,7 @@
 
 typedef std::vector<std::unordered_map<std::string, std::any>> typePaths;
 
-//Market datas
+//Corellated assets number
 auto M = 3;
 
 //TRS datas
