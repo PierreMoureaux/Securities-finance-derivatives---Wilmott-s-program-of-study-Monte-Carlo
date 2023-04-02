@@ -15,6 +15,7 @@ Programs of study are following ones:
 - VI-TRS with floating financing rate, HJM model
 - VII-TRS with floating financing rate, LMM model
 - VIII-Bonus : TRS with floating financing rate, Generalized RFR MM model
+- IX-Bonus : Composite (x-ccy) TRS
 
 III – Disclaimers
 -	For each stream, a summary documentation will be attached (merely mathematical oriented)
