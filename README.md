@@ -16,6 +16,7 @@ Programs of study are following ones:
 - VII-TRS with floating financing rate, LMM model
 - VIII-Bonus : TRS with floating financing rate, Generalized RFR MM model
 - IX-Bonus : Composite (x-ccy) TRS
+- X-Bonus : TRS on equity with jump process
 
 III – Disclaimers
 -	For each stream, a summary documentation will be attached (merely mathematical oriented)
