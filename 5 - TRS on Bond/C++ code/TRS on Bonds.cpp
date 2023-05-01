@@ -50,9 +50,9 @@ double BondPrice(double nbSimulP, int tk, const std::vector<double>& couponSched
         std::vector<double> phir;
         std::vector<double> phil;
         std::vector<double> phig;
+        std::default_random_engine generator;
         for (auto k = 0; k != lTP; k++)
         {
-            std::default_random_engine generator;
             phir.emplace_back(std::normal_distribution<double>{0, 1}(generator));
             phil.emplace_back(std::normal_distribution<double>{0, 1}(generator));
             phig.emplace_back(std::normal_distribution<double>{0, 1}(generator));
