@@ -45,7 +45,7 @@ def pathsGeneration(nbSimul,lT,S0,sigma0,r,kappa,theta,gamma,lamb,muJ,sigmaJ,rho
         intr[0]=r
         meanJRN = np.exp(muJ+0.5*(sigmaJ**2))-1
         if (2*kappa*theta <= gamma**2):
-            kappa = (gamma**2)/(2*theta)+5
+            kappa = (gamma**2)/(2*theta)+0.1
         for k in range(lT-1):
             sigma[k+1] = kappa*(theta-sigma[k])*deltaT + gamma*np.sqrt(sigma[k])*(rhoSsigma*np.sqrt(deltaT)*phiS[k]+np.sqrt(1-rhoSsigma*rhoSsigma)*np.sqrt(deltaT)*phitild[k])+sigma[k]
             S[k+1] = S[k]*((r-lamb*meanJRN)*deltaT+np.sqrt(sigma[k]*deltaT)*phiS[k]+(np.exp(phiJ[k])-1)*P[k]) + S[k]
