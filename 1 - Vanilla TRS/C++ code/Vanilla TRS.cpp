@@ -4,7 +4,6 @@
 #include <math.h>
 #include <any>
 #include <iostream>
-#include <algorithm>
 
 typedef std::vector<std::unordered_map<std::string, std::vector<double>>> typePaths;
 
@@ -39,9 +38,9 @@ typePaths pathsGeneration(int nbSimul, int lT, double S0, double sigma0, double 
         std::vector<double> phiS;
         std::vector<double> phitild;
         std::vector<double> phihat;
+	  std::default_random_engine generator;
         for (auto k = 0; k != lT; k++)
         {
-            std::default_random_engine generator;
             phiS.emplace_back(std::normal_distribution<double>{0, 1}(generator));
             phitild.emplace_back(std::normal_distribution<double>{0, 1}(generator));
             phihat.emplace_back(std::normal_distribution<double>{0, 1}(generator));
